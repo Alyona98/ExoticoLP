@@ -1143,15 +1143,17 @@ footer.footer .messengers .rights {
 footer.footer .messengers .rights i {
   margin-left: 15px;
 }
-/*Адаптивная вёрстка*/
 @media only screen and (max-width: 960px) {
   .wrapper {
     width: calc(100% - 20px);
   }
 }
-@media only screen and (max-width: 768px) {
-  .header_top .inner_header nav > ul {
+@media only screen and (max-width: 885px) {
+  .header_top .inner_header nav > ul.menu_list {
     display: none;
+  }
+  .header_top .inner_header nav > ul.is_open {
+    display: block;
   }
   .header_top .inner_header .main_navigation .fa-bars {
     color: #FFF;
@@ -1175,6 +1177,8 @@ footer.footer .messengers .rights i {
   .header_top .inner_header nav > ul > li a {
     line-height: 16px;
   }
+}
+@media only screen and (max-width: 768px) {
   .home_slider .slide .slide_title {
     font-size: 40px;
     line-height: 50px;
@@ -1192,7 +1196,57 @@ footer.footer .messengers .rights i {
     min-height: 180px;
   }
 }
+@media only screen and (max-width: 540px) {
+  .header_top .inner_header .main_navigation {
+    display: block;
+    position: relative;
+  }
+  .header_top .inner_header nav > ul.menu_list {
+    display: none;
+  }
+  .header_top .inner_header nav > ul.is_open {
+    display: flex;
+    position: absolute;
+    z-index: 90;
+    top: 32px;
+    left: -138px;
+    padding: 5px 0px;
+    background-color: #fa5816;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 138px;
+  }
+  .header_top .inner_header nav > ul > li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .header_top .inner_header nav > ul > li ul.sub-menu {
+    left: 40px;
+    top: 110%;
+  }
+  .header_top .inner_header nav > ul > li ul.sub-menu::before {
+    left: 10px;
+  }
+  .header_top .inner_header nav > ul > li a {
+    font-size: 12px;
+  }
+  .header_top .inner_header .header_cart i {
+    margin-bottom: 3px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .header_top .inner_header nav > ul > li {
+    margin-left: 20px;
+  }
+}
 @media only screen and (max-width: 414px) {
+  .header_top .inner_header .main_navigation {
+    min-width: 30px;
+  }
+  .header_top .inner_header .header_cart {
+    width: 85px;
+    font-size: 15px;
+  }
   .home_slider .slide .slide_title {
     font-size: 24px;
     line-height: 28px;

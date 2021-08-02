@@ -3,18 +3,10 @@ jQuery(function($) {
 	"use strict";
 
 //Адаптивность
-if ($('.fa-bars').length) {
-	$('.fa-bars').on('click', function(){
-		$('.header_top .inner_header nav > ul').show();
-		$(this).hide();
-		$('.fa-times').show();
-	});
-	$('.fa-times').on('click', function(){
-		$('.header_top .inner_header nav > ul').hide();
-		$(this).hide();
-		$('.fa-bars').show();
-	});
-}
+$('.fa-bars').on('click', function(){
+	$('.menu_list').toggleClass('is_open');
+	$('.fa-bars').toggleClass('fa-times');
+});
 //Слайдер
 if ($('.home_slider').length) {
 	$('.home_slider').slick({

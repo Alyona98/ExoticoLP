@@ -1273,6 +1273,18 @@ footer.footer {
 	.wrapper {
 		width: ~"calc(100% - 20px)";
 	}
+	.home_slider .slide{
+		padding-top: 40px;
+		min-height: 600px;
+	}
+	.home_slider .slide .slide_description{
+		padding-left: 65px;
+		align-self: stretch;
+	}
+	.home_slider .slide .image_price .slide_price{
+		right: -25%;
+		top: 60%;
+	}
 }
 
 @media only screen and (max-width: 885px) {
@@ -1312,7 +1324,10 @@ footer.footer {
 		line-height: 50px;
 	}
 	.home_slider .slide {
-		padding-top: 70px;
+		padding-top: 45px;
+	}
+	.home_slider .slide .slide_description{
+		align-self: center;
 	}
 	.blog_testimonials .blog_container .testimonial_slider_box .testimonial_carousel .person img {
 		max-width: 60%;
@@ -1362,11 +1377,32 @@ footer.footer {
 	.header_top .inner_header .header_cart i{
 		margin-bottom: 3px;
 	}
+	.home_slider .slide .slide_data{
+		min-height: 400px;
+	}
+	.home_slider ul.slick-dots{
+		margin-left: 20px;
+	}
+	.home_slider .slide .slide_description{
+		align-self: flex-start;
+		width: 50%;
+		padding-left: 40px;
+	}
+	.home_slider .slide .image_price{
+		width: 40%;
+		margin-left: -70px;
+	}
 }
 
 @media only screen and (max-width: 475px) {
 	.header_top .inner_header nav > ul > li{
 		margin-left: 20px;
+	}
+	.home_slider .slide .image_price .slide_price{
+		right: -25%;
+	}
+	.home_slider .slide .image_price{
+		margin-left: -35px;
 	}
 }
 
@@ -1378,16 +1414,19 @@ footer.footer {
 	width: 85px;
 	font-size: 15px;
 }
+.home_slider .slide{
+	padding-top: 25px;
+}
 .home_slider .slide .slide_title {
-  	font-size: 24px;
-  	line-height: 28px;
+  	font-size: 30px;
+  	line-height: 32px;
   	text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
   }
   .home_slider .slide .slide_description {
-  	width: 100%;
-  	padding:0;
-  	margin: 0;
-  	text-align: center;
+	width: 85%;
+    padding: 0;
+    margin: auto;
+    text-align: center;
   }
   .home_slider .slide .slide_data {
   	display: block;
@@ -1396,14 +1435,21 @@ footer.footer {
   }
   .home_slider .slide .image_price {
   	padding: 0;
-  	margin: 0;
+  	margin: auto;
+    margin-top: 10px;
   	width: 100%;
   }
   .slick-slide img {
-  	max-width: 60%;
+  	max-width: 73%;
+  }
+  .home_slider .slide .image_price .slide_price{
+	right: 0%;
   }
   .home_slider ul.slick-dots {
   	margin-left: 15px;
+  }
+  .home_slider .slide{
+	  height: 611px;
   }
   section.about_us span.subtitle {
   	font-size: 18px;

@@ -30,16 +30,28 @@ if ($('.shop_carousel').length) {
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		//отключение кнопок по умолчанию:
 		appendArrows: $('.shop_slider_navigation'),
 		prevArrow:"<div class=\"left\"><i class=\"fas fa-arrow-left\"></i></div>",
 		nextArrow:"<div class=\"right\"><i class=\"fas fa-arrow-right\"></i></div>",
-		//Адаптивность
 		responsive: [
+			{
+		    	breakpoint: 750,
+		    	settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+		    	}
+		    },
 		    {
-		    	breakpoint: 420,
+		    	breakpoint: 600,
 		    	settings: {
 					slidesToShow: 2,
+					slidesToScroll: 1
+		    	}
+		    },
+		    {
+		    	breakpoint: 350,
+		    	settings: {
+					slidesToShow: 1,
 					slidesToScroll: 1
 		    	}
 		    }
@@ -52,16 +64,21 @@ if ($('.testimonial_carousel').length) {
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		//отключение кнопок по умолчанию:
 		appendArrows: $('.testimonial_slider_box'),
 		prevArrow:"<div class=\"left_arrow\"><div class=\"left\"><i class=\"fas fa-arrow-left\"></i></div></div>",
 		nextArrow:"<div class=\"right_arrow\"><div class=\"right\"><i class=\"fas fa-arrow-right\"></i></div></div>",
-		//Адаптивность
 		responsive: [
-		    {
-		    	breakpoint: 420,
+			{
+		    	breakpoint: 850,
 		    	settings: {
 					slidesToShow: 2,
+					slidesToScroll: 1
+		    	}
+		    },
+		    {
+		    	breakpoint: 400,
+		    	settings: {
+					slidesToShow: 1,
 					slidesToScroll: 1
 		    	}
 		    }
